@@ -1,0 +1,9 @@
+version: "3.1"
+
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - ./templates:/etc/nginx/templates
+    network_mode: "host"
+
